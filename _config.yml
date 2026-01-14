@@ -8,8 +8,10 @@ baseurl: ""                      # Base URL si se publica en un subdirectorio, d
 permalink: /:categories/:title/
 # Configuración de GitHub Pages  
 theme: minimal                     # Tema oficial de GitHub Pages
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-- jekyll-feed                   # Genera RSS feed automáticamente  
+  - jekyll-remote-theme           # add this line to the plugins list if you already have one
+  - jekyll-feed                   # Genera RSS feed automáticamente  
   - jekyll-seo-tag                # Mejora SEO automáticamente  
   - jekyll-sitemap                # Sitemap para buscadores  
   - jekyll-paginate               # Paginación (si aplica)  
@@ -58,7 +60,6 @@ lang: es
 # Configuración de redes sociales en enlaces listos  
 social_links:
 - name: "GitHub"  
-  
     url: "https://github.com/sponsm"
 # Personalización opcional 
 logo: "/assets/images/logo.png"
@@ -66,5 +67,3 @@ favicon: "/assets/images/favicon.ico"
 # Configuración de RSS feed  
 feed:
 path: feed.xml
-# SEO adicional: Google Analytics  
-google_analytics: UA-XXXXXXX-1  # Reemplaza con tu ID de GA
