@@ -7,7 +7,7 @@ baseurl: ""                      # Base URL si se publica en un subdirectorio, d
 # Permalink amigable para SEO  
 permalink: /:categories/:title/
 # Configuración de GitHub Pages  
-theme: minima                     # Tema oficial de GitHub Pages
+theme: minimal                     # Tema oficial de GitHub Pages
 plugins:
 - jekyll-feed                   # Genera RSS feed automáticamente  
   - jekyll-seo-tag                # Mejora SEO automáticamente  
