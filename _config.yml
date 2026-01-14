@@ -1,1 +1,71 @@
-
+# _config.yml  
+# Configuración básica del sitio  
+title: "Mi Portfolio"           # Título del sitio
+description: "Descripción breve y clara de mi portfolio para SEO."
+url: "https://sponsm.github.io" # URL base del sitio (sin / final)
+baseurl: ""                      # Base URL si se publica en un subdirectorio, dejar vacío si es root
+# Permalink amigable para SEO  
+permalink: /:categories/:title/
+# Configuración de GitHub Pages  
+theme: minima                     # Tema oficial de GitHub Pages
+plugins:
+- jekyll-feed                   # Genera RSS feed automáticamente  
+  - jekyll-seo-tag                # Mejora SEO automáticamente  
+  - jekyll-sitemap                # Sitemap para buscadores  
+  - jekyll-paginate               # Paginación (si aplica)  
+  
+paginate: 5                        # Número de posts por página
+paginate_path: "/page:num/"
+# Configuración de SEO y meta tags  
+seo:
+title: "Mi Portfolio"
+description: "Descripción optimizada para motores de búsqueda."
+twitter: usuario_twitter         # Tu handle de Twitter
+facebook: usuario_facebook       # Página de Facebook
+# Markdown y código  
+markdown: kramdown
+kramdown:
+input: GFM                       # Soporta GitHub Flavored Markdown
+hard_wrap: false
+auto_ids: true
+# Navegación y enlaces  
+collections:
+posts:
+output: true
+defaults:
+- scope:  
+  
+      path: ""                    # Aplica a todo el sitio
+type: "posts"
+values:
+layout: "post"
+author: "sponsm"
+# Opciones extra de optimización  
+exclude:
+- Gemfile  
+  - README.md  
+  - node_modules  
+  - vendor  
+  
+# Configuración de sitemap  
+sitemap:
+filename: "sitemap.xml"
+exclude:
+- /assets/  
+    - /images/  
+  
+# Internacionalización (opcional)  
+lang: es
+# Configuración de redes sociales en enlaces listos  
+social_links:
+- name: "GitHub"  
+  
+    url: "https://github.com/sponsm"
+# Personalización opcional 
+logo: "/assets/images/logo.png"
+favicon: "/assets/images/favicon.ico"
+# Configuración de RSS feed  
+feed:
+path: feed.xml
+# SEO adicional: Google Analytics  
+google_analytics: UA-XXXXXXX-1  # Reemplaza con tu ID de GA
