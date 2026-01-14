@@ -20,7 +20,6 @@ paginate_path: "/page:num/"
 seo:
 title: "Mi Portfolio"
 description: "Descripción optimizada para motores de búsqueda."
-twitter: usuario_twitter         # Tu handle de Twitter
 facebook: usuario_facebook       # Página de Facebook
 # Markdown y código  
 markdown: kramdown
