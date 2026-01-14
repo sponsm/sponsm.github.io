@@ -20,7 +20,7 @@ paginate_path: "/page:num/"
 seo:
 title: "Mi Portfolio"
 description: "Descripción optimizada para motores de búsqueda."
-facebook: usuario_facebook       # Página de Facebook
+linkedIn:       # Página de LinkedIn
 # Markdown y código  
 markdown: kramdown
 kramdown:
